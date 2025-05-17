@@ -29,7 +29,7 @@ body {
     height: 150px;
     margin: 10px;
     padding: 10px;
-    background-color: #1e1e1eec;
+    background-color: #1e1e1ed8;
     border-radius: 12px;
     text-align: center;
     display: inline-flex;
@@ -55,7 +55,7 @@ body {
 
 .app:hover,
 .app:focus {
-    background-color: #333333;
+    background-color: #1e1e1e;
     transform: scale(1.05);
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
 }
