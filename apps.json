@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Portainer",
+    "icon": "c783d5-portainer.webp",
+    "url": "http://192.168.0.40:9000/#!/auth"
+  },
+  {
+    "name": "Forgejo",
+    "icon": "forgejo-wordmark.svg",
+    "url": "http://192.168.0.40:3004/dashboard"
+  },
+  {
+    "name": "YouTube Downloader",
+    "icon": "youtube-dl-icon-1024x1024-b43ixii9.webp",
+    "url": "http://192.168.0.40:17442/#/home"
+  },
+  {
+    "name": "Transmission",
+    "icon": "Transmission_(BitTorrent_client)-Logo.wine.webp",
+    "url": "http://192.168.0.40:9091/"
+  },
+  {
+    "name": "AriaNG",
+    "icon": "ariang.png",
+    "url": "http://192.168.0.40:3002/"
+  },
+  {
+    "name": "Uptime Kuma",
+    "icon": "uptime-kuma-icon-1024x940-gabwl61r.webp",
+    "url": "http://192.168.0.40:3001/dashboard"
+  },
+  {
+    "name": "Calibre-Web",
+    "icon": "calibreweb.svg",
+    "url": "http://192.168.0.40:8083"
+  },
+  {
+    "name": "Audiobookshelf",
+    "icon": "audiobookshelf.svg",
+    "url": "http://192.168.0.40:8084"
+  },
+  {
+    "name": "Ollama Open WebUI",
+    "icon": "ollama.webp",
+    "url": "http://192.168.0.40:3000"
+  },
+  {
+    "name": "Owncast",
+    "icon": "Owncast_logo.svg.png",
+    "url": "http://192.168.0.40:8080/"
+  },
+  {
+    "name": "Plex",
+    "icon": "plex-logo-full-color-on-black.svg",
+    "url": "http://192.168.0.40:32400/web/index.html#!/"
+  },
+  {
+    "name": "Pi-Hole 0",
+    "icon": "pihole-icon-1393x2048-dld9kbl1.webp",
+    "url": "http://192.168.0.31/admin/login"
+  },
+  {
+    "name": "Pi-Hole 1",
+    "icon": "pihole-icon-1393x2048-dld9kbl1.webp",
+    "url": "http://192.168.0.82/admin/login"
+  }
+]

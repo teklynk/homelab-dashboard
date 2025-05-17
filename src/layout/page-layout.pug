@@ -1,0 +1,17 @@
+doctype html
+html(lang=lang)
+    head
+        meta(charset='UTF-8')
+        link(rel='icon', href='/assets/icons/favicon.ico')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title
+            block title
+                | Homelab - Dashboard
+    body
+
+        main#main(role="main")
+            block main_container
+                block content
+
+        block script
+            script(type='module', src='@/main.js')

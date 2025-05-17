@@ -1,0 +1,8 @@
+extends ../layout/page-layout.pug
+
+block content
+    .dashboard
+        if apps && apps.length > 0
+            each app in apps
+                a.app(href=app.url, target="_blank", aria-label=app.name, tabindex="0", data-app=app.name)
+                    img(src="icons/" + app.icon, alt=app.name, title=app.name)
