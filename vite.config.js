@@ -39,6 +39,7 @@ export default defineConfig({
         })
     ],
     build: {
+        emptyOutDir: true,
         rollupOptions: {
             output: {
                 chunkFileNames: 'assets/main-[hash].js'
