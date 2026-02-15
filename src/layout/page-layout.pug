@@ -11,7 +11,11 @@ html(lang=lang)
 
         main#main(role="main")
             block main_container
+            
                 block content
-
+                
+                div.text-center.mt-4
+                    a(href="https://github.com/teklynk/homelab-dashboard", target="_blank", aria-label="github" title="github") Github
+            
         block script
             script(type='module', src='@/main.js')

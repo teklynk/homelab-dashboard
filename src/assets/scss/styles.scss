@@ -10,6 +10,18 @@ body {
     background: #000 url(/assets/0277.jpg) center center / cover;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
 @media only screen and (max-width: 1060px) {
     body {
         height: auto !important;
