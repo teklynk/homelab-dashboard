@@ -40,7 +40,7 @@ This dashboard reads data from an `apps.json` file located in the project root.
     ```
 
     *Note: If the file is missing or invalid, the dashboard will load with an empty list of apps.*
-    
+
 3. Add app icons to `public/icons`. The build configuration is already set to pull icons from this directory.
 
 ## Usage
@@ -77,10 +77,26 @@ Ensure you have Docker and Docker Compose installed.
 
 The dashboard will be available at `http://localhost:10000`
 
-Note: The `apps.json` configuration is baked into the application at build time. If you modify `apps.json`, you must rebuild the container.
+*Note: The `apps.json` configuration is baked into the application at build time. If you modify `apps.json`, you must rebuild the container.*
 
 ### Manual Build
 ```bash 
 docker build -t homelab-dashboard . 
 docker run -p 10000:10000 homelab-dashboard
 ```
+
+## Troubleshooting
+
+### Where is the `dist` folder?
+When running with Docker, the `dist` folder is created **inside the container** (at `/app/dist`). You will not see it on your host machine. The application serves the files from this internal directory.
+### Using Local `dist` Directory
+The `docker-compose.yml` is configured to mount your local `dist` folder into the container. This allows you to build locally and serve the files via Docker.
+
+If you make changes to `apps.json` or the source code, you must rebuild the container to update the internal `dist` folder:
+1. Run `npm run build` on your host machine to generate the static files.
+2. Start the container: `docker-compose up -d`.
+
+```bash
+docker-compose up -d --build
+```
+*Note: If you see an empty page or errors, ensure you have run `npm run build` locally so the `dist` folder is populated.*
