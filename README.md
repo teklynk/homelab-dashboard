@@ -74,24 +74,17 @@ npm run preview
 ## Docker
 You can also run the dashboard using Docker.
 
-### Using Docker Compose
-Ensure you have Docker and Docker Compose installed.
-
-The dashboard will be available at `http://localhost:10000`
-
-*Note: The `apps.json` configuration is baked into the application at build time. If you modify `apps.json`, you must rebuild the container.*
-
 ### Manual Build
 ```bash 
 docker build -t homelab-dashboard . 
 docker run -p 10000:10000 homelab-dashboard
 ```
 
-## Troubleshooting
+### Using Docker Compose
+Ensure you have Docker Compose installed.
 
-### Where is the `dist` folder?
-When running with Docker, the `dist` folder is created **inside the container** (at `/app/dist`). You will not see it on your host machine. The application serves the files from this internal directory.
-### Using Local `dist` Directory
+The dashboard will be available at `http://localhost:10000`
+
 The `docker-compose.yml` is configured to mount your local `dist` folder into the container. This allows you to build locally and serve the files via Docker.
 
 If you make changes to `apps.json` or the source code, you must rebuild the container to update the internal `dist` folder:
@@ -101,4 +94,9 @@ If you make changes to `apps.json` or the source code, you must rebuild the cont
 ```bash
 docker-compose up -d --build
 ```
+Or, run this one-liner to build and spin up the container.
+```bash
+npm run build && docker-compose down && docker-compose up -d --build
+```
+
 *Note: If you see an empty page or errors, ensure you have run `npm run build` locally so the `dist` folder is populated.*
