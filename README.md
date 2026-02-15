@@ -8,6 +8,8 @@ A lightweight, customizable dashboard for your homelab services, built with [Vit
 - **Dynamic Configuration:** Define your services in a local `apps.json` file without modifying the source code.
 - **Templating:** Uses Pug (formerly Jade) for clean, readable HTML templates.
 
+![dashboard](https://github.com/teklynk/homelab-dashboard/blob/main/Screenshot%20from%202026-02-14%2019-07-46.jpg?raw=true)
+
 ## Prerequisites
 
 - Node.js (LTS version recommended)
